@@ -1,4 +1,4 @@
-本项目致力于对Spring Boot 2.2.5.RELEASE Reference Document进行汉化
+对Spring Boot 2.2.5.RELEASE Reference Document进行汉化
 
 [Spring Boot 参考文档共10章](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started)
 
