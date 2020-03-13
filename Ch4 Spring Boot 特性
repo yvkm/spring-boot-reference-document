@@ -1,0 +1,74 @@
+# Spring Boot 特性
+这章深入介绍Spring Boot的细节。在这里，你可以学到你想使用和需要定制的关键功能。如果你还没有准备好，你可能需要先阅读前两章，这样你就对Spring Boot的基础
+有一个很好的认识。
+## 4.1 SpringApplication
+`SpringApplication`提供了便捷的方式来引导从`main()`方法启动的Spring应用程序。在很多情况下，你可以委托静态方法`SpringApplication.run`来启动程序：
+```
+public static void main(String[] args) {
+    SpringApplication.run(MySpringConfiguration.class, args);
+}
+```
+当程序启动后，你可以看到以下输出：
+```
+ .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::   v2.2.5.RELEASE
+
+2019-04-31 13:09:54.117  INFO 56603 --- [           main] o.s.b.s.app.SampleApplication            : Starting SampleApplication v0.1.0 on mycomputer with PID 56603 (/apps/myapp.jar started by pwebb)
+2019-04-31 13:09:54.166  INFO 56603 --- [           main] ationConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e5a8246: startup date [Wed Jul 31 00:08:16 PDT 2013]; root of context hierarchy
+2019-04-01 13:09:56.912  INFO 41370 --- [           main] .t.TomcatServletWebServerFactory : Server initialized with port: 8080
+2019-04-01 13:09:57.501  INFO 41370 --- [           main] o.s.b.s.app.SampleApplication            : Started SampleApplication in 2.992 seconds (JVM running for 3.658)
+```
+默认情况下，输入的是`INFO`级别的日志，它包含了一些启动相关的细节，如启动程序的用户。如果你需要其他级别的日志，你可以参考[Log Levels](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#boot-features-custom-log-levels)设置。
+应用程序的版本由主应用程序类包中的实现版本来决定。启动日志可以通过`spring.main.log-startup-info=false`来关闭。这还会关闭程序中激活了哪些profile的日志记录。
+> 你可以扩展SpringApplication类并重写`logStartupInfo(boolean)`方法来添加额外的启动日志。
+
+### 4.1.1 启动失败
+
+### 4.1.2 延迟初始化
+### 4.1.3 定制Banner
+### 4.1.4 定制SpringApplication
+### 4.1.5 流式Builder API
+### 4.1.6 应用事件和监听器
+### 4.1.7 Web Enviroment
+### 4.1.8 访问应用参数
+### 4.1.9 ApplicationRunner和CommandLineRunner的使用
+### 4.1.10 退出应用
+### 4.1.11 管理特性
+
+## 4.2 外部化配置
+## 4.3 配置(Profiles)
+## 4.4 日志
+## 4.5 i18n
+## 4.6 JSON
+## 4.7 开发Web应用
+## 4.8 RSocket
+## 4.9 安全
+## 4.10 使用SQL数据库
+## 4.11 使用NoSQL技术
+## 4.12 缓存
+## 4.13 消息
+## 4.14 使用`RestTemplate`调用REST服务
+## 4.15 使用`WebClient`调用REST服务
+## 4.16 验证
+## 4.17 发送邮件
+## 4.18 JTA的分布式事务
+## 4.19 Hazelcas
+## 4.20 Quartz调度器
+## 4.21 任务执行与调度
+## 4.22 Spring Integeration
+## 4.23 Spring Session
+## 4.24 通过JMX监视和管理应用
+## 4.25 测试
+## 4.26 WebSocket
+## 4.27 Web 服务
+## 4.28 创建自动配置
+## 4.29 Kotlin支持
+## 4.30 接下来读什么？
+
+
+
