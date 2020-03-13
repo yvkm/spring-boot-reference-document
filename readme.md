@@ -11,5 +11,5 @@
     Ch6 Deploying Spring Boot Applications ->0%
     Ch7 Spring Boot CLI -> 0%
     Ch8 Build Tool Plugins -> 0%
-    Ch9 "How-To" Guides -> 0%
+    Ch9 "How-To" Guides :white_check_mark:9.1
     Ch10 Appendices -> 0%
