@@ -1,0 +1,5 @@
+org.springframework.boot.diagnostics.FailureAnalyzer=\
+  com.github.yvkm.failureanalyzer_9_1_1.FailureAnalyzerImpl
+
+org.springframework.boot.env.EnvironmentPostProcessor=\
+  com.github.yvkm.environmentpostprocessor_9_1_3.EnviromentPostProcessImpl
